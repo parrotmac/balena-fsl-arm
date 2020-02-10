@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.47.0+rev2
+## (2020-02-10)
+
+* Update balena-yocto-scripts to v1.5.4 [Alexandru Costache]
+* u-boot: Set RAM size via cmdline for Nitrogen8MM DWE [Alexandru Costache]
+
 # v2.47.0+rev1
 ## (2020-02-05)
 

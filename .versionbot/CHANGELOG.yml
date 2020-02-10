@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.5.4
+      hash: 0ec7031cad5410a0f0ef49916158615bfe50efec
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.5.4
+        changelog-entry: Update balena-yocto-scripts to v1.5.4
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'u-boot: Set RAM size via cmdline for Nitrogen8MM DWE'
+      hash: 0351c70b771a3730063dd00db62a26aa1d015473
+      body: |
+        Without this, sporadic emmc errors will occurr
+        after board has been running for some time.
+
+        Also, update to latest available u-boot revision
+        in Boundary github.
+      footer:
+        Changelog-entry: 'u-boot: Set RAM size via cmdline for Nitrogen8MM DWE'
+        changelog-entry: 'u-boot: Set RAM size via cmdline for Nitrogen8MM DWE'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.47.0+rev2
+  date: 2020-02-10T15:12:45.017Z
+- commits:
     - subject: Update meta-balena from v2.46.1 to v2.47.0
       hash: db8c89db9a1d899feadc30181536c41c7d37374f
       body: |
