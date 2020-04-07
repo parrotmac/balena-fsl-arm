@@ -11,6 +11,7 @@
 
 BALENA_STORAGE_nitrogen6xq2g = "overlay2"
 BALENA_STORAGE_nitrogen8mm = "overlay2"
+BALENA_STORAGE_nitrogen8m = "overlay2"
 BALENA_STORAGE_nitrogen8mm-dwe = "overlay2"
 # Set this to 1 if development image is desired
 #DEVELOPMENT_IMAGE = "1"

@@ -14,7 +14,9 @@ do_compile() {
         # Use iMX8MM soc, not iMX8M. If dtbs not specified in lower case too
         # mkimage_fit_atf.sh will not use 8mm dtb when generating iMX8MM-2g.its
         # thus booting will fail - imx-mkimage/iMX8M/sok.mak:74
-        make SOC=iMX8MM DTBS=${UBOOT_DTB_NAME} dtbs=${UBOOT_DTB_NAME} ${target}
+# FIXME
+#        make SOC=iMX8MM DTBS=${UBOOT_DTB_NAME} dtbs=${UBOOT_DTB_NAME} ${target}
+        make SOC=iMX8M DTBS=${UBOOT_DTB_NAME} dtbs=${UBOOT_DTB_NAME} ${target}
         if [ -e "${BOOT_STAGING}/${target}" ]; then
             cp ${BOOT_STAGING}/${target} ${S}/${BOOT_CONFIG_MACHINE}-${target}
         fi

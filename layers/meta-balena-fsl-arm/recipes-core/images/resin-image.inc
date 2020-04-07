@@ -77,6 +77,11 @@ IMAGE_CMD_resinos-img_append_solidrun-imx6 () {
 }
 
 
+#
+# Boundary Devices Nitrogen8m Mini 2GB RAM
+# Boundary Devices Nitrogen8m Mini DWE 1GB RAM
+#
+
 IMAGE_FSTYPES_append_nitrogen8mm = " resinos-img"
 RESIN_IMAGE_BOOTLOADER_nitrogen8mm = "u-boot"
 RESIN_BOOT_PARTITION_FILES_nitrogen8mm = " \
@@ -100,3 +105,25 @@ IMAGE_INSTALL_append_nitrogen8mm = " \
 "
 
 DEPENDS_append_nitrogen8mm += "imx-boot"
+
+#
+# Boundary Devices Nitrogen8m 2GB RAM
+#
+
+IMAGE_FSTYPES_append_nitrogen8m = " resinos-img"
+RESIN_IMAGE_BOOTLOADER_nitrogen8m = "u-boot"
+RESIN_BOOT_PARTITION_FILES_nitrogen8m = " \
+    imx8m-nitrogen8m.dtb:/imx8m-nitrogen8m.dtb \
+    boot.scr-${MACHINE}:/boot.scr \
+    imx-boot:/imx-boot \
+"
+
+IMAGE_INSTALL_append_nitrogen8m = " \
+	firmware-imx \
+	kernel-module-imx-gpu-viv \
+	kernel-module-qcacld \
+	linux-firmware-bdsdmac \
+	u-boot-script-boundary \
+"
+
+DEPENDS_append_nitrogen8m += "imx-boot"
