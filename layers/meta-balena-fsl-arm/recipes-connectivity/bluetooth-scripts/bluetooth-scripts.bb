@@ -28,4 +28,4 @@ do_install_append() {
     install -m 755 ${WORKDIR}/nitrogen8mm-bluetooth.sh  ${D}/${systemd_unitdir}/
 }
 
-COMPATIBLE_MACHINE="nitrogen8mm"
+COMPATIBLE_MACHINE="(nitrogen8m|nitrogen8mm)"
